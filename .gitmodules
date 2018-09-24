@@ -4,3 +4,18 @@
 [submodule "curve25519-dalek"]
 	path = curve25519-dalek
 	url = git@github.com:dalek-cryptography/curve25519-dalek.git
+[submodule "ed25519-dalek"]
+	path = ed25519-dalek
+	url = git@github.com:dalek-cryptography/ed25519-dalek.git
+[submodule "bulletproofs"]
+	path = bulletproofs
+	url = git@github.com:dalek-cryptography/bulletproofs.git
+[submodule "x25519-dalek"]
+	path = x25519-dalek
+	url = git@github.com:dalek-cryptography/x25519-dalek.git
+[submodule "zkp"]
+	path = zkp
+	url = git@github.com:dalek-cryptography/zkp.git
+[submodule "merlin"]
+	path = merlin
+	url = git@github.com:dalek-cryptography/merlin.git
