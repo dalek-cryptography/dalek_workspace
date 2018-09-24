@@ -6,6 +6,9 @@
 # disabled for now.
 export RUSTDOCFLAGS = --html-in-header curve25519-dalek/docs/assets/rustdoc-include-katex-header.html --cfg feature="nightly"
 
+update:
+	git submodule update --recursive --remote
+
 doc:
 	cargo doc --no-deps
 
