@@ -7,6 +7,7 @@
 export RUSTDOCFLAGS = --html-in-header curve25519-dalek/docs/assets/rustdoc-include-katex-header.html --cfg feature="nightly"
 
 update:
+	git submodule init
 	git submodule update --recursive --remote
 
 doc:
