@@ -8,7 +8,7 @@
 	path = ed25519-dalek
 	url = https://github.com/dalek-cryptography/ed25519-dalek.git
 [submodule "bulletproofs"]
-	branch = circuit
+	branch = main
 	path = bulletproofs
 	url = https://github.com/dalek-cryptography/bulletproofs.git
 [submodule "x25519-dalek"]
