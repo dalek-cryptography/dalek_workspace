@@ -1,22 +1,28 @@
 [submodule "subtle"]
 	path = subtle
+	branch = develop
 	url = https://github.com/dalek-cryptography/subtle.git
 [submodule "curve25519-dalek"]
 	path = curve25519-dalek
+	branch = develop
 	url = https://github.com/dalek-cryptography/curve25519-dalek.git
 [submodule "ed25519-dalek"]
 	path = ed25519-dalek
+	branch = develop
 	url = https://github.com/dalek-cryptography/ed25519-dalek.git
 [submodule "bulletproofs"]
-	branch = main
 	path = bulletproofs
+	branch = develop
 	url = https://github.com/dalek-cryptography/bulletproofs.git
 [submodule "x25519-dalek"]
 	path = x25519-dalek
+	branch = develop
 	url = https://github.com/dalek-cryptography/x25519-dalek.git
 [submodule "zkp"]
 	path = zkp
+	branch = develop
 	url = https://github.com/dalek-cryptography/zkp.git
 [submodule "merlin"]
 	path = merlin
+	branch = develop
 	url = https://github.com/dalek-cryptography/merlin.git
