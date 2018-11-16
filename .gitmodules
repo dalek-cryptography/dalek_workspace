@@ -4,7 +4,7 @@
 	url = https://github.com/dalek-cryptography/subtle.git
 [submodule "curve25519-dalek"]
 	path = curve25519-dalek
-	branch = develop
+	branch = master
 	url = https://github.com/dalek-cryptography/curve25519-dalek.git
 [submodule "ed25519-dalek"]
 	path = ed25519-dalek
@@ -24,5 +24,5 @@
 	url = https://github.com/dalek-cryptography/zkp.git
 [submodule "merlin"]
 	path = merlin
-	branch = develop
+	branch = master
 	url = https://github.com/dalek-cryptography/merlin.git

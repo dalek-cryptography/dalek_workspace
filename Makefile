@@ -4,7 +4,9 @@
 # just sticking it on rather than configuring the crate, this breaks crates
 # that have features that depend on nightly (like ed25519-dalek), so those are
 # disabled for now.
-export RUSTDOCFLAGS = --html-in-header curve25519-dalek/docs/assets/rustdoc-include-katex-header.html --cfg feature="nightly"
+export RUSTDOCFLAGS = --html-in-header curve25519-dalek/docs/assets/rustdoc-include-katex-header.html --cfg feature="nightly" --cfg feature="yoloproofs"
+
+
 
 update:
 	git submodule init
