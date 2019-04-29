@@ -17,9 +17,15 @@ install:
 before_script:
   - npm install -g firebase-tools 
 
+env:
+  - TARGET=doc
+  - TARGET=doc-internal
+
 script:
-  - make clean
-  - make doc
+  # Choose a deploy target project
+  - if [ $TARGET = "doc" ]; then firebase use default; fi
+  - if [ $TARGET = "doc-internal" ]; then firebase use internal; fi
+  - make $target
 
 after_success:
 - firebase deploy --token=$FIREBASE_TOKEN
