@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "doc": "dalek-cryptography-doc",
+    "doc-internal": "dalek-cryptography-docinternal"
+  }
+}
