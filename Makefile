@@ -1,7 +1,8 @@
 # Set two flags for rustdoc: first, html-in-header to load katex,
 # second, cfg feature="nightly" to work around cargo doc --no-deps not passing
 # the nightly feature (without which docs don't build).
-export RUSTDOCFLAGS = --html-in-header curve25519-dalek/docs/assets/rustdoc-include-katex-header.html --cfg feature="nightly"
+# Also add "yoloproofs" to build the bulletproofs R1CS docs.
+export RUSTDOCFLAGS = --html-in-header curve25519-dalek/docs/assets/rustdoc-include-katex-header.html --cfg feature="nightly" --cfg feature="yoloproofs"
 
 update:
 	git submodule init
