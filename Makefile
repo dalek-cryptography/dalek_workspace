@@ -17,3 +17,5 @@ doc:
 doc-internal:
 	cargo doc --no-deps --all --manifest-path curve25519-dalek/Cargo.toml  --features "nightly simd_backend" --document-private-items
 
+clean:
+	cargo clean
