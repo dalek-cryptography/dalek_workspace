@@ -1,0 +1,23 @@
+language: rust
+cache: cargo
+sudo: false
+
+branches:
+  only:
+    # This is for testing the branch, change to 'master' before merging
+    - firebase
+
+install:
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+  - source ~/.nvm/nvm.sh
+  - nvm install 10
+
+before_script:
+  - npm install -g firebase-tools 
+
+script:
+  - make clean
+  - make doc
+
+after_success:
+- firebase deploy --token=$FIREBASE_TOKEN
