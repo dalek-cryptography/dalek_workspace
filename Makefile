@@ -15,11 +15,24 @@ doc:
 	cargo doc --no-deps --all --manifest-path curve25519-dalek/Cargo.toml  --features "nightly simd_backend"
 	# Copy static assets
 	cp -a assets target/doc/
+	# Create a path for the develop branch docs
+	mkdir -p target/doc/develop
+	# Build develop branches
+	cd develop && \
+	  cargo doc --no-deps --all --manifest-path curve25519-dalek/Cargo.toml  --features "nightly simd_backend" && \
+	  cp -a target/doc/* ../target/doc/develop
 
 doc-internal:
 	cargo doc --no-deps --all --manifest-path curve25519-dalek/Cargo.toml  --features "nightly simd_backend" --document-private-items
 	# Copy static assets
 	cp -a assets target/doc/
+	# Create a path for the develop branch docs
+	mkdir -p target/doc/develop
+	# Build develop branches
+	cd develop && \
+	  cargo doc --no-deps --all --manifest-path curve25519-dalek/Cargo.toml  --features "nightly simd_backend" --document-private-items && \
+	  cp -a target/doc/* ../target/doc/develop
 
 clean:
 	cargo clean
+	cd develop && cargo clean
