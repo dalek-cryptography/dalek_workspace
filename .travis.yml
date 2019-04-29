@@ -23,9 +23,7 @@ env:
 
 script:
   # Choose a deploy target project
-  - if [ $TARGET = "doc" ]; then firebase use default; fi
-  - if [ $TARGET = "doc-internal" ]; then firebase use internal; fi
-  - make $target
+  - make $TARGET
 
 after_success:
-- firebase deploy --token=$FIREBASE_TOKEN
+- firebase deploy -P $TARGET --token=$FIREBASE_TOKEN
