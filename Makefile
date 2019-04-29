@@ -13,9 +13,13 @@ doc:
 	# the features for the *other* crates are set manually using RUSTDOCFLAGS.
 	# This means that curve25519-dalek can pick up packed_simd and build.
 	cargo doc --no-deps --all --manifest-path curve25519-dalek/Cargo.toml  --features "nightly simd_backend"
+	# Copy static assets
+	cp -a assets target/doc/
 
 doc-internal:
 	cargo doc --no-deps --all --manifest-path curve25519-dalek/Cargo.toml  --features "nightly simd_backend" --document-private-items
+	# Copy static assets
+	cp -a assets target/doc/
 
 clean:
 	cargo clean
