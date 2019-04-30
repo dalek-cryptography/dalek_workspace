@@ -10,6 +10,13 @@
       "source": "/",
       "destination": "/curve25519_dalek",
       "type": 301
+    } ],
+    "headers": [ {
+      "source": "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)",
+      "headers": [ {
+        "key": "Access-Control-Allow-Origin",
+        "value": "*"
+      } ]
     } ]
   }
 }
