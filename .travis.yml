@@ -6,8 +6,7 @@ sudo: false
 
 branches:
   only:
-    # This is for testing the branch, change to 'master' before merging
-    - firebase
+    - master
 
 install:
   - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
